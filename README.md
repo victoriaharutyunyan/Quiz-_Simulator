@@ -1,10 +1,10 @@
 # Quiz-_Simulator
 This is for the individual project
 Who-is my product's target audience
-My products target audience is mostly students, instructors and pupils
+My products target audience is mostly students, instructors,leaders of teams, directors of offices.
 Why-does the audience need my product
 The audience need my product as usually students have problems with axam taking procedure and they need more practice. Students who never took an exam can have imagination f it with using our app and they can understand their current grade and how well do they know the topics they must practcie.
-Instructors can make artificial exam types to know what kind of test they can prepare for real exams.
+Instructors can make artificial exam types to know what kind of test they can prepare for real exams. Leaders can make quizes for their teams to check whether they know the material or not.
 When-do I need it by
 By the 1st of September
 What-do I build
