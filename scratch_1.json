@@ -1,0 +1,19 @@
+{
+  "Questions": [
+    {
+      "Question": "What is the longest river in South America?",
+      "option1": "Uruguay",
+      "option2": "Orinoco",
+      "option3": "Amazon",
+      "option4": "Cauca",
+      "correct": "Uruguay"
+    },
+    {"Question": "What is the largest lake in Africa?",
+      "option1": "Tanganyika",
+      "option2": "Karita",
+      "option3": "Tana",
+      "option4": "Victoria",
+      "correct": "Victoria"
+    }
+  ]
+}
