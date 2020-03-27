@@ -9,22 +9,22 @@ count = 0
 inProgress = True
 
 
-def hello():
+def timer():
   global inProgress
   global count
   count = count + 1
   if inProgress:
-   Timer(1.0, hello).start()
+   Timer(1.0, timer).start()
 
 
 for obj in data['Questions']:
     count = 0
     inProgress = True
-    hello()
-    temp = obj['correct']
+    timer()
+    temp = obj['correct'].lower()
     del obj['correct']
     options = input (obj)
-    if options == temp:
+    if options.lower() == temp:
         print ("True")
         inProgress = False
         score = score + 1
@@ -32,15 +32,12 @@ for obj in data['Questions']:
         thisCount = str(count)
         print("you have spent " + thisCount + " seconds on this task")
     else:
-     print ("False")
-     inProgress = False
-     thisCount = str(count)
-     print("you have spent " + thisCount + " seconds on this task")
-     questions_asked = questions_asked + 1
+      print ("False")
+      inProgress = False
+      thisCount = str(count)
+      print("you have spent " + thisCount + " seconds on this task")
+      questions_asked = questions_asked + 1
+
 
 if score >= 0:
  print ("you finished the test and this is your score", score)
-else:
- print ("you cannot get any score,you lose")
-
-
