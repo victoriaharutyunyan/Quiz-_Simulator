@@ -1,0 +1,50 @@
+{
+ "Geography":
+  [
+    {
+      "Question": "What is the longest river in South America?",
+      "answers": [
+        "Uruguay",
+        "Orinoco",
+        "Amazon",
+        "Cauca"
+      ],
+      "correct": "Uruguay"
+    },
+    {
+      "Question": "What is the largest lake in Africa?",
+      "answers": [
+        "Tanganyika",
+        "Karita",
+        "Tana",
+        "Victoria"
+      ],
+      "correct": "Victoria"
+    }
+  ],
+  "History":
+    [
+      {
+        "Question": "What sport’s hall of fame enshrined Abraham Lincoln for having a stellar record of just one loss?",
+        "answers": [
+          "Wrestling",
+          "Soccer",
+          "Swimming",
+          "Tennis"
+        ],
+        "correct": "Wrestling"
+      },
+      {
+        "Question": "How many stars does the American Flag have?",
+        "answers": [
+          "forty",
+          "fifty",
+          "fiftyfive",
+          "fortyfive"
+        ],
+        "correct": "fifty"
+      }
+        ]
+    }
+
+

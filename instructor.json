@@ -1,0 +1,20 @@
+{
+  "Questions": [
+    {
+      "Question": "what is my name",
+      "option1": "victoria",
+      "option2": "ani",
+      "option3": "anna",
+      "option4": "karina",
+      "correct": "victoria"
+    },
+    {
+      "Question": "what is my age",
+      "option1": "12",
+      "option2": "13",
+      "option3": "14",
+      "option4": "18",
+      "correct": "18"
+    }
+  ]
+}
