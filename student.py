@@ -142,5 +142,4 @@ def asking_questions(data):
 def main():
     my_data = get_data()
     asking_questions(my_data)
-
 # main()

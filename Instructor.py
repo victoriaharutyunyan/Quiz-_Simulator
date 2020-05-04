@@ -25,7 +25,7 @@ def making_quiz(data):
      start = input("do you want to make a quiz?").lower()
      if start == "yes":
        for obj in data['Questions']:
-         hello = pretty_print(obj)
+        pretty_print(obj)
 
        f = open("instructor.json", "w")
        json.dump(data, f, indent=2)
@@ -43,6 +43,5 @@ def making_quiz(data):
 def main():
     current_data = get_data()
     making_quiz(current_data)
-
 # main()
 
