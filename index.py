@@ -40,4 +40,4 @@ for obj in data['Questions']:
 
 
 if score >= 0:
- print ("you have finished the test and this is your score", score)
+ print ("you finished the test and this is your score", score)
