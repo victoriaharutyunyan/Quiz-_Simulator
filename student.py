@@ -7,7 +7,7 @@ def get_data():
     with open("edited.json") as file_data:
      questions = json.load(file_data)
 
-    return questions
+     return questions
 
 count = -1
 inProgress = True
@@ -18,8 +18,8 @@ def timer():
     if (inProgress == True):
         count = count + 1
         Timer(1.0, timer).start()
-    elif (inProgress == False):
-        return count
+    # elif (inProgress == False):
+
 
 
 
@@ -48,31 +48,33 @@ def history_quiz(data_2):
  while True:
   start = input("Do you want to start a quiz? (yes or no)...").lower()
   if (start == "yes"):
-        quest = data_2["History"]
-        count = -1
-        inProgress = True
-        for obj in quest:
-         timer()
-         temp = obj['correct'].lower()
-         del obj['correct']
-         pretty_print(obj)
-         options = input("Your answer...")
-         if options.lower() == temp:
-            print("True")
-            inProgress = False
-            score = score + 1
-            thisCount = str(count)
-            print("you have spent " + thisCount + " seconds on this task")
-         else:
-            print("False")
-            inProgress = False
-            thisCount = str(count)
-            print("you have spent " + thisCount + " seconds on this task")
+      quest = data_2["History"]
+      for obj in quest:
+          count = -1
+          inProgress = True
+          timer()
+          temp = obj['correct'].lower()
+          del obj['correct']
+          pretty_print(obj)
+          options = input("Your answer...")
+          if options.lower() == temp:
+              print("True")
+              inProgress = False
+              score = score + 1
 
-        print("you finished the test and this is your score", score)
-        if (score == 0):
-          print("Here you can improve your knowledge of American history https://www.usa.gov/history")
-        break
+              thisCount = str(count)
+              print("you have spent " + thisCount + " seconds on this task")
+          else:
+              print("False")
+              inProgress = False
+              thisCount = str(count)
+              print("you have spent " + thisCount + " seconds on this task")
+
+
+      print("you finished the test and this is your score", score)
+      if (score == 0):
+         print("Here you can improve your knowledge of American history https://www.usa.gov/history")
+         break
 
   elif (start == "no"):
       print("Try again next time")
@@ -88,29 +90,30 @@ def geography_quiz(data_1):
      start = input("Do you want to start a quiz? (yes or no)...").lower()
      if (start == "yes"):
           quest = data_1["Geography"]
-          count = -1
-          inProgress = True
           for obj in quest:
-           timer()
-           temp = obj['correct'].lower()
-           del obj['correct']
-           pretty_print(obj)
-           options = input("Your answer...")
-           if options.lower() == temp:
-            print("True")
-            inProgress = False
-            score = score + 1
-            thisCount = str(count)
-            print("you have spent " + thisCount + " seconds on this task")
-           else:
-            print("False")
-            inProgress = False
-            thisCount = str(count)
-            print("you have spent " + thisCount + " seconds on this task")
+              count = -1
+              inProgress = True
+              timer()
+              temp = obj['correct'].lower()
+              del obj['correct']
+              pretty_print(obj)
+              options = input("Your answer...")
+              if options.lower() == temp:
+                  print("True")
+                  inProgress = False
+                  score = score + 1
+                  thisCount = str(count)
+                  print("you have spent " + thisCount + " seconds on this task")
+              else:
+                  print("False")
+                  inProgress = False
+                  thisCount = str(count)
+                  print("you have spent " + thisCount + " seconds on this task")
+
           print("you finished the test and this is your score", score)
           if (score == 0):
-           print("Here you can improve your knowledge of Geography https://www.nationalgeographic.org/encyclopedia/geography/")
-          break
+              print("Here you can improve your knowledge of Geography https://www.nationalgeographic.org/encyclopedia/geography/")
+              break
 
 
      elif(start == "no"):
